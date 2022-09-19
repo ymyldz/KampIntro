@@ -42,9 +42,18 @@ internal class Program
         Console.WriteLine();                        //Console.WriteLine(musteris); kullanımı neden hata veriyor burada başkanım ekrana yazması lazım değilmi
 
         MusteriManager musteriManager = new MusteriManager();
-        musteriManager.Ekle(m1); // burada musteriManager.Ekle(m1+m2+m3) neden yapamıyoruz baskanım
-        musteriManager.Sil(m2);
-        musteriManager.Listele(m3);
-       
+        foreach (Musteri m in musteris)
+        {
+            musteriManager.Ekle(m); // burada musteriManager.Ekle(m1+m2+m3) neden yapamıyoruz baskanım
+            musteriManager.Sil(m);
+            musteriManager.Listele(m);
+        }
+        //foreach (Musteri m in musteris)
+        
+      
+
+        
+
+
     }
 }

@@ -9,7 +9,7 @@ namespace ClassMetotDemo
 {
      class MusteriManager
     {
-        public void Ekle(Musteri m) 
+        public void Ekle(Musteri m)
         {
             Console.WriteLine("Müşteri eklendi : "  + m.Adi);
 
@@ -26,11 +26,12 @@ namespace ClassMetotDemo
         }
         public void Listele(Musteri m) 
         {
-            Console.WriteLine("Müşteriler listelendi : " + 
-                "Müşteri Adı : "+m.Adi+
-                "Müşteri Soyadı : " + m.Soyadi+
-                "Müşteri Yaşı : "+m.Yas+ 
-                "Müşteri Puanı"+ m.krediPuani);
+            Console.WriteLine("\nMüşteriler listelendi" +
+                "\n----------------------- " + 
+                "\nMüşteri Adı : "+m.Adi+
+                "\nMüşteri Soyadı : " + m.Soyadi+
+                "\nMüşteri Yaşı : "+m.Yas+ 
+                "\nMüşteri Puanı : "+ m.krediPuani);
         }
 
     }
